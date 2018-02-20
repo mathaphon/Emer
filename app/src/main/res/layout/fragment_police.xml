@@ -33,6 +33,19 @@
                     android:layout_alignParentTop="true"
                     android:src="@drawable/station1" />
 
+                <!--Title-->
+                <TextView
+                    android:layout_alignParentBottom="true"
+                    android:padding="5dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="#ffffff"
+                    android:background="#82000000"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="Station 1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
             </RelativeLayout>
 
 
