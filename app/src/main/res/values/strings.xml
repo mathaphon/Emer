@@ -1,5 +1,11 @@
 <resources>
-    <string name="app_name">test</string>
+    <string name="app_name">Emer Call</string>
+
     <string name="close">close Drawer</string>
-    <string name="open">open</string>
+    <string name="open">open Drawer</string>
+
+    <string name="station1">เหตุด่วน เหตุร้ายร้าย</string>
+    <string name="station2">สอนหนังสือ</string>
+    <string name="station3">ฉุกเเฉิน</string>
+    <string name="station4">อ่านหนังสือ</string>
 </resources>

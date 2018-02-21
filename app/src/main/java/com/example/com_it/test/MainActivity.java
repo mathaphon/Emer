@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
         }
             return super.onOptionsItemSelected(item);
 
+
     }
 
     @Override
@@ -74,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onPostCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
         super.onPostCreate(savedInstanceState, persistentState);
+
         actionBarDrawerToggle.syncState();
     }
 }
