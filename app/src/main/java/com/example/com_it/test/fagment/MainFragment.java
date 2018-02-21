@@ -6,11 +6,15 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.TextureView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.com_it.test.R;
+
+import org.w3c.dom.Text;
 
 /**
  * Created by COM_IT on 2/20/2018.
@@ -39,11 +43,23 @@ public class MainFragment extends Fragment{
             }
         });
 
+        TextView stationlTextView = getView().findViewById(R.id.textViewStation1);
+        stationilmageViaw.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d(tag, "Cllck Trxt ") + getString(R.string.station1));
+
+            }
+        });
         //        For Station 2
 
         //        For Station 3
 
         //        For Station 4
+
+    } //Main Method
+
+    public void callStation(String numberCall) {
 
     }
 
