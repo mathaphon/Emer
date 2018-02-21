@@ -1,5 +1,10 @@
 package com.example.com_it.test;
 
+import android.content.res.Configuration;
+import android.graphics.drawable.DrawableWrapper;
+import android.support.annotation.Nullable;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -7,6 +12,17 @@ import android.support.v7.widget.Toolbar;
 import com.example.com_it.test.fagment.MainFragment;
 
 public class MainActivity extends AppCompatActivity {
+
+    //    Explicit
+    private DrawerLayout drawerLayout;
+    private ActionBarDrawerToggle actionBarDrawerToggle;
+
+    @Override
+        protected void onPostCreate(@Nullable Bundle savedInstanceState) {
+        super.onPostCreate(savedInstanceState);
+
+        actionBarDrawerToggle.syncState();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +33,20 @@ public class MainActivity extends AppCompatActivity {
 
            Toolbar toolbar = findViewById(R.id.toolbartMain);
            setSupportActionBar(toolbar);
+           getSupportActionBar().setHomeButtonEnabled(true);
+           getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+           drawerLayout = findViewById(R.id.drawerLayoutMain);
+           actionBarDrawerToggle = new ActionBarDrawerToggle(
+                   MainActivity.this,
+                   drawerLayout,
+                   R.string.open,
+                   R.string.close );
+
+                   drawerLayout.setDrawerListener(actionBarDrawerToggle);
+
+
+
+
         //     Add Fragment
         if (savedInstanceState==null) {
 
@@ -27,4 +57,11 @@ public class MainActivity extends AppCompatActivity {
 
     } // Main Method
 
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+    }
+
+    }
 } // Main Class
