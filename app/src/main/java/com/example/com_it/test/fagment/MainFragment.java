@@ -60,6 +60,20 @@ public class MainFragment extends Fragment {
             }
         });
         //        For Station 2
+        ImageView Station2ImageView = getActivity().findViewById(R.id.imageViewStation2);
+        Station2ImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                callStation("2222");
+            }
+        });
+        TextView station2TextView = getView().findViewById(R.id.textViewStation2);
+        station2TextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                callStation("2222");
+            }
+        });
 
         //        For Station 3
 
