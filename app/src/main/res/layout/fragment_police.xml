@@ -60,10 +60,22 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
                     android:src="@drawable/station2" />
+
+                <!--Title-->
+                <TextView
+                    android:layout_alignParentBottom="true"
+                    android:padding="5dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="#ffffff"
+                    android:background="#82000000"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="Station 1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView2" />
 
             </RelativeLayout>
 
@@ -74,15 +86,15 @@
 
         <!--Blue Layout-->
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
             <!--Green Layout-->
             <RelativeLayout
-                android:layout_margin="@dimen/margin"
                 android:layout_width="@dimen/icon"
-                android:layout_height="@dimen/icon">
+                android:layout_height="@dimen/icon"
+                android:layout_margin="@dimen/margin">
 
                 <!--Station3-->
                 <ImageView
@@ -93,6 +105,20 @@
                     android:layout_alignParentTop="true"
                     android:src="@drawable/station3" />
 
+                <!--Title-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#82000000"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="Station 1"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
             </RelativeLayout>
 
             <!--Green Layout-->
@@ -102,17 +128,35 @@
 
                 <!--Station4-->
                 <ImageView
+                    android:id="@+id/imageView"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
+                    android:layout_marginTop="28dp"
                     android:src="@drawable/station4" />
 
-             </RelativeLayout>
+
+                <!--Title-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#82000000"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="Station 1"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
 
 
-        <!--Red Layout-->
+            <!--Red Layout-->
         </LinearLayout>
 
 
