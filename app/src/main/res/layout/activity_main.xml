@@ -67,6 +67,7 @@
 
             <!--Icon-->
             <ImageView
+
                 android:src="@drawable/station1"
                 android:layout_width="48dp"
                 android:layout_height="48dp" />
@@ -75,8 +76,10 @@
 
             <!--Iitle-->
             <TextView
+                android:id="@+id/txtPolice"
+                android:Clickadle="true"
                 android:textSize="30dp"
-               android:text="Police"
+                android:text="Police"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
@@ -99,6 +102,8 @@
 
             <!--Iitle-->
             <TextView
+                android:id="@+id/txtHospital"
+                android:Clickadle="true"
                 android:textSize="30dp"
                 android:text="Hospital"
                 android:layout_width="wrap_content"
@@ -123,6 +128,8 @@
 
             <!--Iitle-->
             <TextView
+                android:id="@+id/txtInsurance"
+                android:Clickadle="true"
                 android:textSize="30dp"
                 android:text="Insurance"
                 android:layout_width="wrap_content"
@@ -147,6 +154,8 @@
 
             <!--Iitle-->
             <TextView
+                android:id="@+id/txtExit"
+                android:Clickadle="true"
                 android:textSize="30dp"
                 android:text="Exit"
                 android:layout_width="wrap_content"

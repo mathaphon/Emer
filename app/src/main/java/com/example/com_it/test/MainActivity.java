@@ -10,8 +10,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 
+import com.example.com_it.test.fagment.HospiatalFragment;
 import com.example.com_it.test.fagment.MainFragment;
+import com.example.com_it.test.utility.HospitalAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,9 +28,39 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+//        Police Controller
+        TextView policeTextView = findViewById(R.id.txtPolice);
+
+//      Hospital Controller
+        policeTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.contentMainFragment,new MainFragment()).commit();
+                drawerLayout.closeDrawer();
+            }
+        });
+//      Hospital Controller
+        TextView hospitalTextView = findViewById(R.id.txtHospital);
+        hospitalTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.contentMainFragment,new HospiatalFragment()).commit();
+                drawerLayout.closeDrawer();
+            }
+        });
+
+
+//      Instance Controller
+
+//      Exit Controller
+
+
+
 //        Create TooLbar
 
-           Toolbar toolbar = findViewById(R.id.toolbartMain);
+           Toolbar toolbar = findViewById(R.id.toolbarMain);
            setSupportActionBar(toolbar);
            getSupportActionBar().setHomeButtonEnabled(true);
            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
