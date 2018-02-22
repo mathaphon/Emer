@@ -6,6 +6,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.example.com_it.test.R;
 
 import java.net.ContentHandler;
 
@@ -18,13 +22,13 @@ public class HospitalAdapter extends BaseAdapter{
 //    Expllcit
     private Context context;
     private int[] intes;
-    private String[] titleStrings, phonesStrlngs,
+    private String[] titleStrings, phonesStrings,
 
     public HospitalAdapter(Context context, int[] intes, String[] titleStrings, String[] phonesStrlngs) {
         this.context = context;
         this.intes = intes;
         this.titleStrings = titleStrings;
-        this.phonesStrlngs = phonesStrlngs;
+        this.phonesStrings = phonesStrlngs;
     }
 
     @Override
@@ -46,10 +50,20 @@ public class HospitalAdapter extends BaseAdapter{
     public View getView(int i, View view, ViewGroup viewGroup) {
 
         LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View view1 = layoutInflater.inflate(R.layout.listview_layout, viewGroup,false);
+
+        ImageView imageView = view1.findViewById(R.id.imageListView);
+        TextView titleTextView = view1.findViewById(R.id.textViewTitle);
+        TextView phoneTextView = view1.findViewById(R.id.textViewPhone);
+
+        imageView.setImageResource(intes[i]);
+        titleTextView.setText(titleStrings[i]);
+        phoneTextView.setText(phonesStrings[i]);
 
 
 
-        return null;
+
+        return view1;
     }
 }  // Main Class
 
