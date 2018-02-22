@@ -9,6 +9,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+
 import com.example.com_it.test.R;
 
 import java.net.ContentHandler;
@@ -22,7 +23,7 @@ public class HospitalAdapter extends BaseAdapter{
 //    Expllcit
     private Context context;
     private int[] intes;
-    private String[] titleStrings, phonesStrings,
+    private String[] titleStrings, phonesStrings;
 
     public HospitalAdapter(Context context, int[] intes, String[] titleStrings, String[] phonesStrlngs) {
         this.context = context;

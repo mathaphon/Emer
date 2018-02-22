@@ -13,11 +13,11 @@
 
     <!--ToolBar-->
 <android.support.v7.widget.Toolbar
-    android:id="@+id/toolbartMain"
+    android:id="@+id/toolbarMain"
     android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
     android:background="@color/colorPrimary"
     android:layout_width="match_parent"
-    android:layout_height="?attr/actionBarSize"></android.support.v7.widget.Toolbar>
+    android:layout_height="?attr/actionBarSize"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -76,7 +76,7 @@
             <!--Iitle-->
             <TextView
                 android:textSize="30dp"
-                android:Tex="police"
+               android:text="Police"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
@@ -84,12 +84,75 @@
 
 
         <!--Hospital-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--Icon-->
+            <ImageView
+                android:src="@drawable/station2"
+                android:layout_width="48dp"
+                android:layout_height="48dp" />
+
+
+
+            <!--Iitle-->
+            <TextView
+                android:textSize="30dp"
+                android:text="Hospital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
 
 
         <!--Insurance-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--Icon-->
+            <ImageView
+                android:src="@drawable/station3"
+                android:layout_width="48dp"
+                android:layout_height="48dp" />
+
+
+
+            <!--Iitle-->
+            <TextView
+                android:textSize="30dp"
+                android:text="Insurance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
 
 
         <!--Exit-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--Icon-->
+            <ImageView
+                android:src="@drawable/station4"
+                android:layout_width="48dp"
+                android:layout_height="48dp" />
+
+
+
+            <!--Iitle-->
+            <TextView
+                android:textSize="30dp"
+                android:text="Exit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
 
 
 </LinearLayout>
