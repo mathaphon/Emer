@@ -60,6 +60,27 @@
             android:layout_height="wrap_content" />
 
         <!--Police-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--Icon-->
+            <ImageView
+                android:src="@drawable/station1"
+                android:layout_width="48dp"
+                android:layout_height="48dp" />
+
+
+
+            <!--Iitle-->
+            <TextView
+                android:textSize="30dp"
+                android:Tex="police"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
 
 
         <!--Hospital-->
