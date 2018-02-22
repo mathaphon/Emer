@@ -55,7 +55,7 @@ public class MainFragment extends Fragment {
         stationilmageViaw.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.d(tag, "Click Text") + getString(R.string.station1));
+
                 callStation("1111");
             }
         });
