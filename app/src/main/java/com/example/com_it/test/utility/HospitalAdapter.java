@@ -1,7 +1,6 @@
 package com.example.com_it.test.utility;
 
 import android.content.Context;
-import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,32 +8,30 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-
 import com.example.com_it.test.R;
 
-import java.net.ContentHandler;
 
 /**
- * Created by COM_IT on 2/22/2018.
+ * Created by Admin on 22/2/2561.
  */
 
 public class HospitalAdapter extends BaseAdapter{
 
-//    Expllcit
+    //    Explicit
     private Context context;
-    private int[] intes;
-    private String[] titleStrings, phonesStrings;
+    private int[] ints;
+    private String[] titleStrings, phoneStrings;
 
-    public HospitalAdapter(Context context, int[] intes, String[] titleStrings, String[] phonesStrlngs) {
+    public HospitalAdapter(Context context, int[] ints, String[] titleStrings, String[] phoneStrings) {
         this.context = context;
-        this.intes = intes;
+        this.ints = ints;
         this.titleStrings = titleStrings;
-        this.phonesStrings = phonesStrlngs;
+        this.phoneStrings = phoneStrings;
     }
 
     @Override
     public int getCount() {
-        return  intes.length;
+        return ints.length;
     }
 
     @Override
@@ -51,20 +48,25 @@ public class HospitalAdapter extends BaseAdapter{
     public View getView(int i, View view, ViewGroup viewGroup) {
 
         LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View view1 = layoutInflater.inflate(R.layout.listview_layout, viewGroup,false);
+        View view1 = layoutInflater.inflate(R.layout.listview_layout, viewGroup, false);
 
         ImageView imageView = view1.findViewById(R.id.imageListView);
         TextView titleTextView = view1.findViewById(R.id.textViewTitle);
         TextView phoneTextView = view1.findViewById(R.id.textViewPhone);
 
-        imageView.setImageResource(intes[i]);
+        imageView.setImageResource(ints[i]);
         titleTextView.setText(titleStrings[i]);
-        phoneTextView.setText(phonesStrings[i]);
-
-
-
+        phoneTextView.setText(phoneStrings[i]);
 
         return view1;
     }
-}  // Main Class
+}   // Main Class
+
+
+
+
+
+
+
+
 

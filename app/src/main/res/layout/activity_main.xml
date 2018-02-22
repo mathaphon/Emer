@@ -74,10 +74,10 @@
 
 
 
-            <!--Iitle-->
+            <!--Title-->
             <TextView
                 android:id="@+id/txtPolice"
-                android:Clickadle="true"
+                android:clickable="true"
                 android:textSize="30dp"
                 android:text="Police"
                 android:layout_width="wrap_content"
@@ -100,10 +100,10 @@
 
 
 
-            <!--Iitle-->
+            <!--Title-->
             <TextView
                 android:id="@+id/txtHospital"
-                android:Clickadle="true"
+                android:clickable="true"
                 android:textSize="30dp"
                 android:text="Hospital"
                 android:layout_width="wrap_content"
@@ -126,10 +126,10 @@
 
 
 
-            <!--Iitle-->
+            <!--Title-->
             <TextView
                 android:id="@+id/txtInsurance"
-                android:Clickadle="true"
+                android:clickable="true"
                 android:textSize="30dp"
                 android:text="Insurance"
                 android:layout_width="wrap_content"
@@ -152,10 +152,10 @@
 
 
 
-            <!--Iitle-->
+            <!--Title-->
             <TextView
                 android:id="@+id/txtExit"
-                android:Clickadle="true"
+                android:clickable="true"
                 android:textSize="30dp"
                 android:text="Exit"
                 android:layout_width="wrap_content"

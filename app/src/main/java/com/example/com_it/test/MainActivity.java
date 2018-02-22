@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.contentMainFragment,new MainFragment()).commit();
-                drawerLayout.closeDrawer();
+                drawerLayout.closeDrawers();
             }
         });
 //      Hospital Controller
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.contentMainFragment,new HospiatalFragment()).commit();
-                drawerLayout.closeDrawer();
+                drawerLayout.closeDrawers();
             }
         });
 
